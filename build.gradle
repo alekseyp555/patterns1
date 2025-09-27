@@ -26,6 +26,7 @@ dependencies {
     //подключаем зависимости lombok
     testCompileOnly 'org.projectlombok:lombok:1.18.24'
     testAnnotationProcessor 'org.projectlombok:lombok:1.18.20'
+    testImplementation 'org.slf4j:slf4j-simple:2.0.3'
 }
 
 test {
