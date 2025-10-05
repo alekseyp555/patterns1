@@ -24,12 +24,14 @@ public class DataGenerator {
     }
 
     // Генерация города из заранее подготовленного списка городов России.
-    public static String generateCity() {
-        var cities = new String[]{      // массив русских городов
-                "Москва", "Санкт-Петербург", "Казань", "Рязань", "Нижний Новгород",
-                "Владивосток", "Ростов-на-Дону", "Тверь", "Ярославль", "Тула", "Мурманск", "Владимир"
-        };
-        return cities[new Random().nextInt(cities.length)]; // возвращаем случайный элемент массива
+    public static String generateCity(String locale) {
+        var faker = new Faker(new Locale(locale));
+        return faker.address().cityName();
+//        var cities = new String[]{      // массив русских городов
+//                "Москва", "Санкт-Петербург", "Казань", "Рязань", "Нижний Новгород",
+//                "Владивосток", "Ростов-на-Дону", "Тверь", "Ярославль", "Тула", "Мурманск", "Владимир"
+//        };
+//        return cities[new Random().nextInt(cities.length)]; // возвращаем случайный элемент массива
     }
 
     // Генерация имени пользователя на определенном локали (языке).
@@ -52,7 +54,7 @@ public class DataGenerator {
         // Создание экземпляра UserInfo с указанием необходимых данных пользователя.
         public static UserInfo generateUser(String locale) {
             return new UserInfo(
-                    generateCity(),                         // генерируем случайный город
+                    generateCity(locale),                    // генерируем случайный город
                     generateName(locale),                   // генерируем полное имя пользователя
                     generatePhone(locale)                   // генерируем номер телефона
             );
