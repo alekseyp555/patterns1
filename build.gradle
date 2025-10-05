@@ -16,7 +16,7 @@ repositories {
 
 dependencies {
     testImplementation 'org.testng:testng:7.1.0'
-    implementation 'com.microsoft.playwright:playwright:1.54.0'
+    implementation 'com.microsoft.playwright:playwright:1.50.0'
     //подключаем библиотеку Faker
     testImplementation 'com.github.javafaker:javafaker:1.0.2'
 
