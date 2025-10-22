@@ -1,3 +1,5 @@
+![Uploading Снимок экрана 2025-10-22 в 15.22.24.png…]()
+
 [![Build status](https://ci.appveyor.com/api/projects/status/hcyvj3h09fad8pop/branch/main?svg=true)](https://ci.appveyor.com/project/ALexZHankok/aqa-hw5-task1/branch/main)
 
 # 5.2 Домашнее задание к занятию «2.3. Patterns»
