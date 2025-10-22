@@ -1,4 +1,5 @@
-![Uploading Снимок экрана 2025-10-22 в 15.22.24.png…]()
+
+<img width="1330" height="724" alt="Снимок экрана 2025-10-22 в 15 22 24" src="https://github.com/user-attachments/assets/1d4cf803-48ab-4c54-9341-8aafecc52719" />
 
 [![Build status](https://ci.appveyor.com/api/projects/status/hcyvj3h09fad8pop/branch/main?svg=true)](https://ci.appveyor.com/project/ALexZHankok/aqa-hw5-task1/branch/main)
 
