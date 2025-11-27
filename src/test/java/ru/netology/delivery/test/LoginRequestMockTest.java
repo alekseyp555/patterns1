@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 import java.nio.charset.StandardCharsets;
 
-public class PostRequestTest {
+public class LoginRequestMockTest {
 
     private static Playwright playwright;
     private BrowserContext context;
@@ -30,20 +30,11 @@ public class PostRequestTest {
     @Test
     public void postUserDataTest() {
         // Тело запроса в формате JSON
-        String payload = "{\n" +
-                "    \"id\": 0,\n" +
-                "    \"username\": \"string\",\n" +
-                "    \"firstName\": \"string\",\n" +
-                "    \"lastName\": \"string\",\n" +
-                "    \"email\": \"string\",\n" +
-                "    \"password\": \"string\",\n" +
-                "    \"phone\": \"string\",\n" +
-                "    \"userStatus\": 0\n" +
-                "}";
+        String payload = "{\"username\":\"test\",\"password\":\"dGVzdA==\"}";
 
         // Отправляем POST-запрос с новыми аргументами
         APIResponse response = context.request().post(
-                "https://petstore.swagger.io/v2/user",
+                "https://api.demoblaze.com/login",
                 RequestOptions.create()
                         .setHeader("Content-Type", "application/json") // устанавливаем заголовок
                         .setData(payload));

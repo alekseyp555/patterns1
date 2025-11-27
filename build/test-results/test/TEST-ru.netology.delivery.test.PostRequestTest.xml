@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ru.netology.delivery.test.PostRequestTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-10-05T16:52:14" hostname="MacBook-Pro-Aleksey.local" time="1.094">
-  <properties/>
-  <testcase name="postUserDataTest" classname="ru.netology.delivery.test.PostRequestTest" time="1.094"/>
-  <system-out><![CDATA[Response body: {"code":200,"type":"unknown","message":"9223372036854775807"}
-]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
